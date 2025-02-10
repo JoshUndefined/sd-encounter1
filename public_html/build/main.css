@@ -1,0 +1,14 @@
+body {
+    font-family: 'Michroma', sans-serif;
+}
+
+.imageContainer {
+    position: relative;   
+   }
+
+.imageOverlay {
+    position: absolute;   
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
