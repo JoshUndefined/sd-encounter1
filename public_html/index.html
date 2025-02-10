@@ -30,6 +30,10 @@
             <img src="" id="second" class="img-fluid imageOverlay" />
             <img src="" id="third" class="img-fluid imageOverlay" />
         </div>
+
+        <div class="row container-fluid">
+            <p>Original Image by <a href="https://www.reddit.com/r/raidsecrets/comments/1ikwarh/sundered_doctrine_1st_encounter_map/">CyanicKenshi on Reddit</a></p>
+        </div>
     </div>
 
 </body>
@@ -67,13 +71,13 @@ $(document).ready(function() {
     function handleButton(btn) {
         if(state == 0) { // Nothing selected yet, first button pushed
             imageName = btn;
-            $("#first").attr("src", "img/" + imageName + ".png");
+            $("#first").attr("src", "img/" + imageName.toUpperCase() + ".png");
         } else if(state == 1) { // Second button pushed 
             imageName += "-" + btn
-            $("#second").attr("src", "img/" + imageName + ".png");
+            $("#second").attr("src", "img/" + imageName.toUpperCase() + ".png");
         } else if(state == 2) { // Third button pushed
             imageName += "-" + btn
-            $("#third").attr("src", "img/" + imageName + ".png");
+            $("#third").attr("src", "img/" + imageName.toUpperCase() + ".png");
             // Disable all buttons
             $(".buttons").attr("disabled", "disabled");
         }
