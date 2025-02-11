@@ -12,3 +12,20 @@ body {
     top: 0;
     z-index: 999;
 }
+
+/* #first, #second, #third {
+    filter: saturate(75%);
+} */
+
+#first {
+    filter: saturate(75%);
+}
+
+#second {
+    filter: saturate(60%);
+    /* filter: hue-rotate(180deg); */
+}
+
+#third {
+    filter: saturate(50%);
+}
